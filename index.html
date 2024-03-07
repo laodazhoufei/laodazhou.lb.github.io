@@ -6,6 +6,14 @@
               content = "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
         <title>Test</title>
+         <script>
+        $(function(){
+            $(".main_left li").on("click",function(){
+                var address =$(this).attr("data-src");
+                $("iframe").attr("src",address);
+            });
+        });
+    </script>
         <script>/*! jQuery v1.10.2 | (c) 2005, 2013 jQuery Foundation, Inc. | jquery.org/license
 //@ sourceMappingURL=jquery.min.map
 */
@@ -144,8 +152,8 @@ u[o]&&(delete u[o],c?delete n[l]:typeof n.removeAttribute!==i?n.removeAttribute(
 
             /*内容区*/
             .content-right{
-                font-size: 10px;
-                line-height: 600px;
+                font-size: 100%;
+                line-height: 100%;
                 text-align: left;
             }
         </style>
@@ -203,15 +211,18 @@ u[o]&&(delete u[o],c?delete n[l]:typeof n.removeAttribute!==i?n.removeAttribute(
                 <div class = "seg"></div>
 
                 <!--菜单栏导航-->
-                <div class = "nav">
+                <nav class = "nav">
+                  <ul>
+                  
                     <!--每一个菜单栏项-->
                     <div class = "nav-menu">
                         <!--主标题-->
                         <div class = "nav-title">逆天</div>
                         <!--子标题-->
                         <div class = "nav-content">
-                            <a href ="#" >逆天</a>
-                            <a href = "#">逆天</a>
+                            <a href =   onclick="">逆天</a>
+                            <a href = onclick="#">逆天</a>
+                            
                         </div>
                     </div>
 
@@ -243,6 +254,8 @@ u[o]&&(delete u[o],c?delete n[l]:typeof n.removeAttribute!==i?n.removeAttribute(
                         <div class = "nav-content">
                             <a href = "#">类目查看</a>
                             <a href = "#">不知道</a>
+                      </ul>
+                      </nav>
                 </div>
                 </div>
                 </div>
@@ -253,7 +266,8 @@ u[o]&&(delete u[o],c?delete n[l]:typeof n.removeAttribute!==i?n.removeAttribute(
 
             <!--右侧内容区-->
             <div class = "content-right">
-                <h1>内容区</h1>
+                <iframe frameBorder="0" scrolling="yes" style="width=auto height=0px;" src="https://ys.mihoyo.com/?utm_source=adbdpz&from_channel=adbdpz#/" id="a"></iframe>
+                
                 
                 <!--喜欢装逼，喜欢高人一等，是不是没见过嘿涩会，是不是没见过黑手，装逼我让你飞起来，啊米诺斯-->
                 
